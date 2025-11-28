@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo Matrix</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="todo-page">
+
+    <h1>TODO Matrix (Eisenhower)</h1>
+    <a href="index.html" class="back-home">← Trang chủ</a>
+
+    <div class="todo-container">
+
+        <!-- Cột trái -->
+        <div class="info-panel">
+            <img src="../images/luan.jpg" class="avatar">
+            <h3>Họ tên: Đặng Thành Luân </h3>
+            <p>MSSV: 231A010741</p>
+        </div>
+
+        <!-- Cột phải -->
+        <div class="task-panel">
+
+            <div class="task-input">
+                <input id="taskName" type="text" placeholder="Tên công việc">
+                <select id="priority">
+                    <option value="1">1 - Quan trọng & Khẩn cấp</option>
+                    <option value="2">2 - Quan trọng, không Khẩn cấp</option>
+                    <option value="3">3 - Không quan trọng nhưng Khẩn cấp</option>
+                    <option value="4">4 - Không quan trọng, không Khẩn cấp</option>
+                </select>
+                <button id="addTask">Thêm</button>
+            </div>
+
+            <div class="matrix">
+                <div class="cell" id="p1"><h3>1 - Q&K</h3></div>
+                <div class="cell" id="p2"><h3>2 - Q, not K</h3></div>
+                <div class="cell" id="p3"><h3>3 - not Q, K</h3></div>
+                <div class="cell" id="p4"><h3>4 - not Q, not K</h3></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

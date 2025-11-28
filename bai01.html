@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Booking System - Chọn ghế</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="booking-page">
+
+    <h1>Booking System - Chọn ghế</h1>
+    <a href="index.html" class="back">← Về trang chủ</a>
+
+    <div class="screen">Màn chiếu</div>
+
+    <div id="seat-container" class="seat-container"></div>
+
+    <div class="info">
+        <p>Số ghế đã chọn: <span id="count">0</span></p>
+        <p>Tổng tiền: <span id="total">0</span> VND</p>
+        <button id="checkoutBtn">Thanh toán</button>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h3>Tóm tắt đơn hàng</h3>
+            <p id="summary"></p>
+            <button id="closeModal">Đóng</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
